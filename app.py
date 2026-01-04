@@ -7,7 +7,7 @@ import numpy as np
 
 st.set_page_config(page_title="Scouting Guarda-Redes", layout="wide", page_icon="🧤")
 
-st.title("🤾 Dashboard de Performance: Guarda-Redes")
+st.title("Dashboard de Performance: Guarda-Redes")
 st.markdown("---")
 
 #CARREGAR DADOS
@@ -126,7 +126,7 @@ st.markdown("---")
 
 #MATRIZ DE EFICÁCIA
 if is_aggregated_view:
-    st.subheader("📊 Matriz de Eficácia: Jogo vs Tipo de Remate")
+    st.subheader("Matriz de Eficácia: Jogo vs Tipo de Remate")
     
     df_filtrado['Game_Label'] = df_filtrado['session_date'].dt.strftime('%d/%m') + '\n' + df_filtrado['opponent']
     
